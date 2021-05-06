@@ -16,7 +16,7 @@ class Auth extends Component {
         super(props)
         this.state = { loginMode: true }
     }
-    
+
     changeMode() {
         this.setState({ loginMode: !this.state.loginMode })
     }
@@ -29,7 +29,6 @@ class Auth extends Component {
     render() {
         const { loginMode } = this.state
         const { handleSubmit } = this.props
-
         return (
             <div className="login-box">
                 <div className="login-logo"><b> My</b> Money</div>

@@ -14,7 +14,7 @@ class AuthOrApp extends Component {
             this.props.validateToken(this.props.auth.user.token)
         }
     }
-    
+
     render() {
         const { user, validToken } = this.props.auth
         if (user && validToken) {
